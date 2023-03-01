@@ -1,4 +1,4 @@
-export function QuizResult({ quizLength, score, handleReset }) {
+export function QuizResults({ quizLength, score, handleReset }) {
     return (
         <>
             <h2>Quiz Result</h2>

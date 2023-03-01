@@ -29,5 +29,5 @@ h3 {
 
 p {
     font-size: clamp(1.2rem, 1.7vw, 1.5rem);
-    line-height: 1.4em;
+    line-height: 1.3em;
 }

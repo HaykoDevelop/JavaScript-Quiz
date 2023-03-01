@@ -1,5 +1,5 @@
-import { QuizResult } from "./quizr.js";
-import QuizCard from "./quizcard.js";
+import { QuizResults } from "./quizr.js";
+import QuizCards from "./quizcard.js";
 import { useState } from "react";
 import quizData from "../../data/quiz.json";
 import styles from "./quiz.module.css";
@@ -32,13 +32,13 @@ export function Quiz() {
     return (
         <>
             {showResult ? (
-                <QuizResult
+                <QuizResults
                     score={score}
                     quizLength={quizLength}
                     handleReset={handleReset}
                 />
             ) : (
-                <QuizCard
+                <QuizCards
                     quizData={quizData}
                     questionId={questionId}
                     quizLength={quizLength}

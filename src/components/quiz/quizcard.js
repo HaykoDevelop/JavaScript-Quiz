@@ -1,4 +1,4 @@
-export default function QuizCard({
+export default function QuizCards({
     quizData,
     questionId,
     handleAnswer,
