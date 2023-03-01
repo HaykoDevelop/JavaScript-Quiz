@@ -22,21 +22,24 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
+/*--------------------------------------------*/ 
+import {Header} from "./components/header/header.js";
+import {Footer} from "./components/footer/footer.js";
+import {Quiz} from "./components/quiz/quiz.js"
+import './assets/app.css';
+
+
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+function App() {
+  return (
+    <>
+      <Header />
+      <Quiz />
+      <Footer />
+    </>
+  );
+}
 
 export default App;
