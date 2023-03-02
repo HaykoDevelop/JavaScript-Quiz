@@ -1,7 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import { setupIonicReact } from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,21 +19,24 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+
+/*--------------------------------------------*/ 
+import {Header} from "./components/header/header.js";
+import {Footer} from "./components/footer/footer.js";
+import {Quiz} from "./components/quiz/quiz.js"
+import './assets/style.css';
+
+
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+function App() {
+  return (
+    <>
+      <Header />
+      <Quiz />
+      <Footer />
+    </>
+  );
+}
 
 export default App;
