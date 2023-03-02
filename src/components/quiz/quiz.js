@@ -2,7 +2,6 @@ import { QuizResults } from "./quizr.js";
 import QuizCards from "./quizcard.js";
 import { useState } from "react";
 import quizData from "../../data/quiz.json";
-import styles from "./quiz.module.css";
 
 export function Quiz() {
     const [showResult, setShowResult] = useState(false);
