@@ -1,55 +1,163 @@
 [
     {
         "id": "1",
-        "question": "1 + 1 =",
+        "question": "How can you add a callback function to an asynchronous call in JavaScript?",
         "options": [
-            {"answer": "2", 
-             "isCorrect": true },
-
-            {"answer": "1", 
+            {"answer": "Use the .find() method", 
              "isCorrect": false },
+
+            {"answer": "Use the .then() method", 
+             "isCorrect": true },
             
-            {"answer": "3", 
+            {"answer": "Use the .join() method", 
              "isCorrect": false }, 
 
-            {"answer": "idk", 
+            {"answer": "Use the .fill() method", 
              "isCorrect": false }
         ]
     },
 
     {
         "id": "2",
-        "question": "2 + 2 =",
+        "question": "What is the difference between synchronous and asynchronous programming?",
         "options": [
-            {"answer": "1", 
+            {"answer": "In asynchronous programming, each line of code must be executed in order before the next line can run.", 
              "isCorrect": false },
 
-            {"answer": "2", 
-             "isCorrect": false },
-
-            {"answer": "3", 
-             "isCorrect": false }, 
-
-            {"answer": "4", 
+            {"answer": "Asynchronous programming, allows for different lines of code to run at the same time.", 
              "isCorrect": true }
         ]        
     },
 
     {
         "id": "3",
-        "question": "2 + 3 = ",
+        "question": "What are 2 native functions to run code asynchronously in JavaScript ?",
         "options": [
-            {"answer": "5",
-             "isCorrect": true },
-
-            {"answer": "1",
+            {"answer": "'timeout' and 'startInterval'",
              "isCorrect": false },
 
-            {"answer": "100",
+            {"answer": "'repeat' and 'setInterval'",
+             "isCorrect": false },
+
+            {"answer": "'setTimeout' and 'setInterval'",
+             "isCorrect": true }, 
+
+            {"answer": "'setTimeout' and 'startInterval'",
+             "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "4",
+        "question": "What is the function to stop an interval timer?",
+        "options": [
+            {"answer": "stopTimer",
+             "isCorrect": false },
+
+            {"answer": "clearInterval",
+             "isCorrect": true },
+
+            {"answer": "shutdownTimer",
              "isCorrect": false }, 
 
-            {"answer": "2",
+            {"answer": "clearTimer",
              "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "5",
+        "question": "In a switch....case....default construct where do we put the expression we are going to evaluate?",
+        "options": [
+            {"answer": "case",
+             "isCorrect": false },
+
+            {"answer": "default",
+             "isCorrect": false },
+
+            {"answer": "switch",
+             "isCorrect": true }
+        ]
+    },
+
+    {
+        "id": "6",
+        "question": "The default statement is mandatory when coding the switch....case....default construct?",
+        "options": [
+            {"answer": "true",
+             "isCorrect": false },
+
+            {"answer": "false",
+             "isCorrect": true }
+        ]
+    },
+
+    {
+        "id": "7",
+        "question": "Which construct is the Conditional special operator often used as a shortcut replacement for?",
+        "options": [
+            {"answer": "do....while",
+             "isCorrect": false },
+
+            {"answer": "if....else",
+             "isCorrect": true },
+
+            {"answer": " try....catch....finally",
+             "isCorrect": false }, 
+
+            {"answer": "switch....case....default",
+             "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "8",
+        "question": "Which construct do we use with errors?",
+        "options": [
+            {"answer": "do....while",
+             "isCorrect": false },
+
+            {"answer": "if....else",
+             "isCorrect": false },
+
+            {"answer": "try....catch....finally",
+             "isCorrect": true }, 
+
+            {"answer": "switch....case....default",
+             "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "9",
+        "question": "How many global error constructors are there in JavaScript?",
+        "options": [
+            {"answer": "3",
+             "isCorrect": false },
+
+            {"answer": "4",
+             "isCorrect": false },
+
+            {"answer": "5",
+             "isCorrect": true }, 
+
+            {"answer": "6",
+             "isCorrect": false },
+
+            {"answer": "7",
+             "isCorrect": false } 
+        ]
+    },
+
+    {
+        "id": "10",
+        "question": " The Number object is static just like the Math object and so we can't create objects of this type?",
+        "options": [
+            {"answer": "true",
+             "isCorrect": false },
+
+            {"answer": "false",
+             "isCorrect": true } 
         ]
     }
 ]
