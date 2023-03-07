@@ -1,3 +1,6 @@
+import React from "react";
+import { IonButton } from "@ionic/react";
+
 export default function QuizCards({
     quizData,
     questionId,
@@ -5,20 +8,23 @@ export default function QuizCards({
     quizLength,
 }) {
     return (
-        <section aria-label="Quiz">
+        <section aria-label="Quiz" class="quiz-card">
             <h2>
-                Quiz {questionId + 1}/{quizLength}
+                Question {questionId + 1}/{quizLength}
             </h2>
             <h3>{quizData[questionId].question}</h3>
             <ul>
                 {quizData[questionId].options.map((element, id) => {
                     return (
-                        <li
+                        <IonButton
+                            class="quiz-answers"
+                            color="quiz-answers"
+                            expand="block"
                             key={"option-" + id}
                             onClick={() => handleAnswer(element.isCorrect)}
                         >
                             {element.answer}
-                        </li>
+                        </IonButton>
                     );
                 })}
             </ul>

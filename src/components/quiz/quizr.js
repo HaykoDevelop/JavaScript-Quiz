@@ -1,11 +1,23 @@
+import React from "react";
+import { IonButton } from "@ionic/react";
+
 export function QuizResults({ quizLength, score, handleReset }) {
     return (
         <>
-            <h2>Quiz Result</h2>
-            <p>
-                You scored {score} out of {quizLength}
-            </p>
-            <button onClick={handleReset}>Reset</button>
+            <section class="quiz-results">
+                <h2>Quiz Result</h2>
+                <p>
+                    You scored {score} out of {quizLength}
+                </p>
+                <IonButton
+                    class="reset-button"
+                    color="quiz-answers"
+                    shape="round"
+                    onClick={handleReset}
+                >
+                    Reset
+                </IonButton>
+            </section>
         </>
     );
 }
