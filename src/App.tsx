@@ -22,7 +22,6 @@ import './theme/variables.css';
 
 /*--------------------------------------------*/ 
 import {Header} from "./components/header/header.js";
-import {Footer} from "./components/footer/footer.js";
 import {Quiz} from "./components/quiz/quiz.js"
 import './assets/style.css';
 
@@ -34,7 +33,6 @@ function App() {
     <>
       <Header />
       <Quiz />
-      <Footer />
     </>
   );
 }
