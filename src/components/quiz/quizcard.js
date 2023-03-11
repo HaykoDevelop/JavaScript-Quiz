@@ -1,5 +1,6 @@
 import React from "react";
 import { IonButton } from "@ionic/react";
+import "../../assets/style.css";
 
 export default function QuizCards({
     quizData,
@@ -17,9 +18,9 @@ export default function QuizCards({
                 {quizData[questionId].options.map((element, id) => {
                     return (
                         <IonButton
-                            class="quiz-answers"
                             color="quiz-answers"
                             expand="block"
+                            size="large"
                             key={"option-" + id}
                             onClick={() => handleAnswer(element.isCorrect)}
                         >

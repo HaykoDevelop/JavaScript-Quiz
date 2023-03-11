@@ -2,6 +2,7 @@ import { QuizResults } from "./quizr.js";
 import QuizCards from "./quizcard.js";
 import { useState } from "react";
 import quizData from "../../data/quiz.json";
+import { IonBackButton, IonButtons } from "@ionic/react";
 
 export function Quiz() {
     const [showResult, setShowResult] = useState(false);
@@ -30,6 +31,9 @@ export function Quiz() {
 
     return (
         <>
+            <IonButtons slot="start">
+                <IonBackButton></IonBackButton>
+            </IonButtons>
             {showResult ? (
                 <QuizResults
                     score={score}

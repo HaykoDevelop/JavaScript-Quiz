@@ -3,29 +3,35 @@
         "id": "1",
         "question": "How can you add a callback function to an asynchronous call in JavaScript?",
         "options": [
-            {"answer": "Use the .find() method", 
+             {"answer": "Use the .find() method", 
              "isCorrect": false },
 
-            {"answer": "Use the .then() method", 
-             "isCorrect": true },
-            
-            {"answer": "Use the .join() method", 
+             {"answer": "Use the .join() method", 
              "isCorrect": false }, 
+             
+             {"answer": "Use the .fill() method", 
+             "isCorrect": false },
 
-            {"answer": "Use the .fill() method", 
-             "isCorrect": false }
-        ]
+             {"answer": "Use the .then() method", 
+              "isCorrect": true }
+            ]
     },
 
     {
         "id": "2",
-        "question": "What is the difference between synchronous and asynchronous programming?",
+        "question": "How many threads does JavaScript support?",
         "options": [
-            {"answer": "In asynchronous programming, each line of code must be executed in order before the next line can run.", 
+            {"answer": "JavaScript is single-threaded", 
+             "isCorrect": true },
+
+            {"answer": "JavaScript is multi-threaded", 
              "isCorrect": false },
 
-            {"answer": "Asynchronous programming, allows for different lines of code to run at the same time.", 
-             "isCorrect": true }
+            {"answer": "JavaScript is thread agnostic", 
+             "isCorrect": false },
+
+            {"answer": "WTF is a thread?", 
+             "isCorrect": false }
         ]        
     },
 
@@ -69,14 +75,14 @@
         "id": "5",
         "question": "In a switch....case....default construct where do we put the expression we are going to evaluate?",
         "options": [
+            {"answer": "switch",
+              "isCorrect": true },
+
             {"answer": "case",
              "isCorrect": false },
 
             {"answer": "default",
-             "isCorrect": false },
-
-            {"answer": "switch",
-             "isCorrect": true }
+             "isCorrect": false }
         ]
     },
 
@@ -96,17 +102,17 @@
         "id": "7",
         "question": "Which construct is the Conditional special operator often used as a shortcut replacement for?",
         "options": [
-            {"answer": "do....while",
+            {"answer": " try....catch....finally",
              "isCorrect": false },
 
-            {"answer": "if....else",
-             "isCorrect": true },
+            {"answer": "do....while",
+             "isCorrect": false },
+             
+             {"answer": "switch....case....default",
+             "isCorrect": false },
 
-            {"answer": " try....catch....finally",
-             "isCorrect": false }, 
-
-            {"answer": "switch....case....default",
-             "isCorrect": false } 
+             {"answer": "if....else",
+               "isCorrect": true }
         ]
     },
 
@@ -114,18 +120,18 @@
         "id": "8",
         "question": "Which construct do we use with errors?",
         "options": [
+            {"answer": "try....catch....finally",
+             "isCorrect": true },
+
             {"answer": "do....while",
              "isCorrect": false },
-
-            {"answer": "if....else",
+             
+             {"answer": "switch....case....default",
              "isCorrect": false },
 
-            {"answer": "try....catch....finally",
-             "isCorrect": true }, 
-
-            {"answer": "switch....case....default",
-             "isCorrect": false } 
-        ]
+             {"answer": "if....else",
+              "isCorrect": false }
+            ]
     },
 
     {

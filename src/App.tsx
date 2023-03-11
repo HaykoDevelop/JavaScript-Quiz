@@ -1,5 +1,5 @@
 import { setupIonicReact } from '@ionic/react';
-
+import { Route, Routes} from 'react-router-dom';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -21,8 +21,9 @@ import './theme/variables.css';
 
 
 /*--------------------------------------------*/ 
-import {Header} from "./components/header/header.js";
-import {Quiz} from "./components/quiz/quiz.js"
+// import {Header} from "./components/header/header.js";
+import {Quiz} from "./components/quiz/quizlogic.js"
+import Home from "./pages/Home"
 import './assets/style.css';
 
 
@@ -31,8 +32,10 @@ setupIonicReact();
 function App() {
   return (
     <>
-      <Header />
-      <Quiz />
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/quiz" element={<Quiz />}/>
+      </Routes>
     </>
   );
 }
